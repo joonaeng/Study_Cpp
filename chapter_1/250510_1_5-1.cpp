@@ -76,25 +76,21 @@
 //     std::cout << "ProgCom이 정의한 함수" << std::endl;
 // }
 
-//이름공간의 중첩 시 아래와 같이 호출하면 불러올 수 있다.
-namespace Parent
-{
-    int num = 2;
+// 이름공간의 중첩 시 아래와 같이 호출하면 불러올 수 있다.
+namespace Parent {
+int num = 2;
 
-    namespace SubOne
-    {
-        int num = 3;
-    } // namespace
+namespace SubOne {
+int num = 3;
+}  // namespace SubOne
 
-    namespace SubTwo
-    {
-        int num = 4;
-    } // namespace
+namespace SubTwo {
+int num = 4;
+}  // namespace SubTwo
 
-} // namespace Parent
+}  // namespace Parent
 
-int main()
-{
+int main() {
     std::cout << Parent::num << std::endl;
     std::cout << Parent::SubOne::num << std::endl;
     std::cout << Parent::SubTwo::num << std::endl;

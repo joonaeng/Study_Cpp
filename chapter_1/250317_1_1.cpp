@@ -6,8 +6,7 @@ void P2();
 void P3();
 void P4();
 
-int main(void)
-{
+int main(void) {
     P4();
     return 0;
 }
@@ -19,8 +18,7 @@ int main(void)
 // endl; -> 줄바꿈꿈
 // 이어서 출력을 사용하는 경우 << 가능
 
-void name()
-{
+void name() {
     char name[100];
     char lang[200];
 
@@ -34,8 +32,7 @@ void name()
     std::cout << "제일 좋아하는 언어는 " << lang << "입니다." << std::endl;
 }
 
-void P1()
-{
+void P1() {
     int num1, num2, num3, num4, num5, result;
 
     std::cout << "1번째 정수 입력: ";
@@ -53,8 +50,7 @@ void P1()
     std::cout << "합계: " << result << std::endl;
 }
 
-void P2()
-{
+void P2() {
     char name[100];
     char phoneNum[100];
 
@@ -67,28 +63,23 @@ void P2()
     std::cout << "이름 : " << name << "\n전화번호 : " << phoneNum << std::endl;
 }
 
-void P3()
-{
+void P3() {
     int num;
     std::cout << "구구단 몇 단? : ";
     std::cin >> num;
 
-    for (int i = 1; i < 10; i++)
-    {
+    for (int i = 1; i < 10; i++) {
         std::cout << num << " x " << i << " = " << num * i << std::endl;
     }
 }
 
-void P4()
-{
+void P4() {
     float pay = 0, sell = 0;
-    while (1)
-    {
+    while (1) {
         std::cout << "판매 금액이 얼마인가요?(종료를 원할 시 -1을 입력) : ";
         std::cin >> sell;
 
-        if (sell == -1)
-            break;
+        if (sell == -1) break;
 
         pay = 50 + ((sell / 100) * 12);
 

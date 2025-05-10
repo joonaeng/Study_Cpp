@@ -7,32 +7,27 @@
 // ex) int num1 = 1, int num2 = 2  가능
 //     int num1, int num2 = 2      가능
 //     int num1 = 1, int num2      불가능 -> 이의 경우 변수 입력이 2개 이상이면 가능할것으로 예상
-int Adder(int num1 = 1, int num2 = 2)
-{
+int Adder(int num1 = 1, int num2 = 2) {
     return num1 + num2;
 }
 
-void P1()
-{
+void P1() {
     std::cout << Adder() << std::endl;
     std::cout << Adder(5) << std::endl;
     std::cout << Adder(3, 5) << std::endl;
 }
 
-int BoxVolume(int length, int width = 1, int height = 1)
-{
+int BoxVolume(int length, int width = 1, int height = 1) {
     return length * width * height;
 }
 
-void P2()
-{
+void P2() {
     std::cout << "[3, 3, 3] : " << BoxVolume(3, 3, 3) << std::endl;
     std::cout << "[5, 5, D] : " << BoxVolume(5, 5) << std::endl;
     std::cout << "[7, D, D] : " << BoxVolume(7) << std::endl;
 }
 
-int main(void)
-{
+int main(void) {
     P2();
     return 0;
 }

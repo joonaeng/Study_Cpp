@@ -12,13 +12,11 @@
 // 그래서 아래와 같이 template를 사용하여 데이터 손실을 발생하지 않게 할 수 있다.
 
 template <typename T>
-inline T SQUARE(T x)
-{
+inline T SQUARE(T x) {
     return x * x;
 }
 
-int main(void)
-{
+int main(void) {
     std::cout << SQUARE(5.5) << std::endl;
     std::cout << SQUARE(12) << std::endl;
     return 0;
